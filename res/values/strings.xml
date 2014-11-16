@@ -8,5 +8,6 @@
     <string name="btn_join_cojoy">Join a cojoy</string>
     <string name="homepage" />
     <string name="title_activity_music_player">MusicPlayerActivity</string>
+    <string name="title_activity_join">Join</string>
 
 </resources>
