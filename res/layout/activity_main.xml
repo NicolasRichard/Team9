@@ -11,24 +11,22 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:onClick="startCojoy"
-        android:text="@string/btn_start_cojoy" />
-
-    <Button
         android:id="@+id/btn_join"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="65dp"
         android:background="@drawable/buttonjoincojoy"
-        android:onClick="joinCojoy" 
+        android:onClick="joinCojoy"
         android:state_pressed="true" />
-    
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_alignLeft="@+id/btn_join"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/buttonstartcojoy"
+        android:onClick="startCojoy" />
 
 </RelativeLayout>
