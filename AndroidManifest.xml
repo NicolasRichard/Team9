@@ -40,9 +40,9 @@
         </activity>
         <activity
             android:name=".Join"
-            android:label="@string/title_activity_join" >
-        	android:parentActivityName="com.hackprinceton.team9.MainActivity" >
-        	<meta-data
+            android:label="@string/title_activity_join" 
+            android:parentActivityName="com.hackprinceton.team9.MainActivity" >
+		<meta-data
 	            android:name="android.support.PARENT_ACTIVITY"
 	            android:value="com.hackprinceton.team9.MainActivity" />
         </activity>
