@@ -13,7 +13,13 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<<<<<<< HEAD
 
+=======
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+>>>>>>> e6cf875a24c5cba0432c675aabfbb00e822c723a
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -31,6 +37,7 @@
         <activity
             android:name=".MusicPlayerActivity"
             android:label="@string/title_activity_music_player"
+<<<<<<< HEAD
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -39,7 +46,15 @@
         <activity
             android:name=".Join"
             android:label="@string/title_activity_join" >
+=======
+        	android:parentActivityName="com.hackprinceton.team9.MainActivity" >
+        	<meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value="com.hackprinceton.team9.MainActivity" />
+>>>>>>> e6cf875a24c5cba0432c675aabfbb00e822c723a
         </activity>
+        
+        <service android:name="com.hackprinceton.team9.MusicService" />
     </application>
 
 </manifest>
