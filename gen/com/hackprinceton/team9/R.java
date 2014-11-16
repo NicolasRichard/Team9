@@ -30,17 +30,19 @@ public final class R {
         public static final int background=0x7f020001;
         public static final int buttonjoincojoy=0x7f020002;
         public static final int buttonjoincojoyp=0x7f020003;
-        public static final int end=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int play=0x7f020006;
-        public static final int rand=0x7f020007;
+        public static final int buttonstartcojoy=0x7f020004;
+        public static final int end=0x7f020005;
+        public static final int final2=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int play=0x7f020008;
+        public static final int rand=0x7f020009;
     }
     public static final class id {
         public static final int action_end=0x7f08000a;
         public static final int action_settings=0x7f080008;
         public static final int action_shuffle=0x7f080009;
-        public static final int btn_join=0x7f080001;
-        public static final int btn_start=0x7f080000;
+        public static final int btn_join=0x7f080000;
+        public static final int btn_start=0x7f080001;
         public static final int cur_play=0x7f080002;
         public static final int current_artist=0x7f080004;
         public static final int current_title=0x7f080003;
