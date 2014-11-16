@@ -14,12 +14,11 @@ public class SongAdapter extends BaseAdapter {
 	private ArrayList<Song> songs;
 	private LayoutInflater songInf;
 	
-	private boolean color;
+	
 
-	public SongAdapter(Context c, ArrayList<Song> theSongs, boolean change){
+	public SongAdapter(Context c, ArrayList<Song> theSongs){
 		  songs=theSongs;
 		  songInf=LayoutInflater.from(c);
-		  color = change;
 		}
 	
 	@Override
@@ -52,13 +51,7 @@ public class SongAdapter extends BaseAdapter {
 	  //get title and artist strings
 	  songView.setText(currSong.getTitle());
 	  artistView.setText(currSong.getArtist());
-	  if(color){
-	  	    songView.setTextColor(Color.parseColor("#000000"));
-	  	    artistView.setTextColor(Color.parseColor("#000000"));
-	  }else{
-	    	songView.setTextColor(Color.parseColor("#6fb7ff"));
-	  	    artistView.setTextColor(Color.parseColor("#6fb7ff"));
-	  }
+	  
 	  //set position as tag
 	  songLay.setTag(position);
 	  return songLay;
