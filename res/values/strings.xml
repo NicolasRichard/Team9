@@ -9,5 +9,6 @@
     <string name="homepage" />
     <string name="title_activity_music_player">MusicPlayerActivity</string>
     <string name="title_activity_join">Join</string>
+    <string name="currently_playing">Currently playing</string>
 
 </resources>

@@ -37,19 +37,4 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	/** register the BroadcastReceiver with the intent values to be matched */
-    @Override
-    public void onResume() {
-        super.onResume();
-        //receiver = new WiFiDirectBroadcastReceiver(manager, channel, this);
-        //registerReceiver(receiver, intentFilter);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        //unregisterReceiver(receiver);
-    }
-	
-	
 }

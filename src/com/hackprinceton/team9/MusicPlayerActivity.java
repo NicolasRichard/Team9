@@ -36,34 +36,21 @@ public class MusicPlayerActivity extends Activity {
 		
 		manager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
         channel = manager.initialize(this, getMainLooper(), null);
+        receiver = new WifiBroadcastReceiver(manager, channel, this);
 	}
 	
     @Override
     public void onResume() {
         super.onResume();
-        manager.createGroup(channel, new ActionListener() {
-
-			@Override
-			public void onFailure(int reason) {
-				return;				
-			}
-
-			@Override
-			public void onSuccess() {
-				return;				
-			}
-        	
-        });
-        receiver = new WifiBroadcastReceiver(manager, channel, this);
         registerReceiver(receiver, intentFilter);
-        fileReceiver = new FileReceiver(activity, "fghfg");
+        //fileReceiver = new FileReceiver(activity, "fghfg");
     }
 
     @Override
     public void onPause() {
         super.onPause();
         unregisterReceiver(receiver);
-        fileReceiver.cancel(true);
+        //fileReceiver.cancel(true);
     }
 
 	/**
