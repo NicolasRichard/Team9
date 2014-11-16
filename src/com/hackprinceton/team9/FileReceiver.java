@@ -12,6 +12,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 
 public class FileReceiver extends AsyncTask<Object, Integer, String> {
+	private FileReceiver subsequentTask = null;
 	private Context context;
 	private String directoryPath;
 
@@ -53,7 +54,14 @@ public class FileReceiver extends AsyncTask<Object, Integer, String> {
      */
     @Override
     protected void onPostExecute(String result) {
-        new FileReceiver(context, directoryPath).execute();
+    	subsequentTask = new FileReceiver(context, directoryPath);
+    	subsequentTask.execute();
+    }
+    
+    @Override
+    protected void onCancelled() {
+    	if (subsequentTask != null)
+    		subsequentTask.cancel(true);
     }
 	
 	public static boolean copyFile(InputStream inputStream, OutputStream out) {
